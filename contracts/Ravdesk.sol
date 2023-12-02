@@ -267,7 +267,7 @@ contract RavDesk is ReentrancyGuard, PriceOFMATICTOUSD {
             uint256 refundAmount = (project.currentBalance * funderContribution) / totalContributed;
 
             // Transfer the calculated refund amount back to the funder
-            if (project.currentBalance > 0) {
+            if (project.currentBalance > 0 && project.currentBalance > refundAmount) {
                 (bool success, ) = payable(funder).call{value: refundAmount}("");
                 
                 if (success) {
