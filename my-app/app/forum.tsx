@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Nav from "@/components/Nav";
-import Main from "@/components/Project";
-export default function Forum() {
+import Forum from "@/components/Forum";
+
+import React from "react";
+
+const forum = () => {
   return (
     <div className="h-100 w-full bg-black p-10">
       {/* these is the nav bar */}
@@ -11,7 +14,9 @@ export default function Forum() {
       </div>
 
       {/* this is the main content of the page */}
-      <Project />
+      <Forum />
     </div>
   );
-}
+};
+
+export default forum;

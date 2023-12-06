@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Nav from "@/components/Nav";
-import Main from "@/components/Project";
-export default function Project() {
+import Project from "@/components/Project";
+import React from "react";
+
+const page = () => {
   return (
     <div className="h-100 w-full bg-black p-10">
       {/* these is the nav bar */}
@@ -14,4 +16,6 @@ export default function Project() {
       <Project />
     </div>
   );
-}
+};
+
+export default page;

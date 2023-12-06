@@ -1,23 +1,94 @@
 import React from "react";
-
+import Image from "next/image";
+import play from "../public/play.png";
 const Main = () => {
   return (
-    <div>
-      <div className="w-[90%] m-auto text-white p-5 flex justify-between items-start gap-10">
-        <div className="w-[664px] h-[468px] bg-[#D7D2DB] rounded-xl"></div>
-        <div className="w-[50%]">
-          <p>Video of the Project</p>
-          <span>Description</span>
-          <p className="whitespace-normal">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
-            quis facere soluta nulla, dolorem debitis cumque. Repudiandae
-            praesentium voluptatum impedit reprehenderit asperiores minus sequi
-            earum quia odio sint, ex id.
-          </p>
+    <div className="p-5 ">
+      <div className="firstsection w-[100%] grid grid-cols-2 justify-items-center place-items-start gap-3 mb-5">
+        <div className="bg-[#D7D2DB] w-[100%] flex justify-center items-center p-16">
+          <Image src={play} alt="" width={80} height={80} />
+        </div>
+        <div className="text-white w-full flex flex-col justify-start items-start gap-5">
+          <h1 className="text-2xl">Video of the Project</h1>
+          <p className="text-xl">description</p>
+          <span className="text-l">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita,
+            impedit!
+          </span>
         </div>
       </div>
-      <div className="w-[954px] h-[85px] bg-[#246CFA] rounded-3xl p-5">
-        <p className="text-xl text-white">Live Link of the Project</p>
+      <div className="flex justify-start items-center bg-[#246CFA] w-[80%] mr-auto p-5 rounded-full">
+        <p className="text-white">Live Link of the Project</p>
+      </div>
+      <div className="text-white flex justify-start items-center gap-20 mt-10">
+        <div className="flex justify-center items-center gap-3 bg-[#D4FC79] text-black px-10 py-4 font-bold text-l rounded-full">
+          <p>100$</p>
+          <p>|</p>
+          <p>50%</p>
+        </div>
+        <div>-</div>
+        <div className="text-xl">June, 2023</div>
+      </div>
+      <p className="text-white p-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ad nisi
+        minus omnis debitis vero, porro suscipit iste fugit error?
+      </p>
+      <div>
+        <p className="bg-[#246CFA] p-5 text-white w-[15%] mr-auto flex justify-center rounded-full items-center">
+          FAQS
+        </p>
+
+        <div className="text-white grid grid-cols-2 justify-items-center gap-4 mt-5">
+          <div className="bg-[#A2CBF0] rounded p-5 py-8">
+            <h1 className="text-[#000C7B]">What is Duis aute irure ?</h1>
+            <span className="text-black">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+              quae.
+            </span>
+            <p className="flex justify-end items-end pt-3 text-[#000C7B]">
+              Read more
+            </p>
+          </div>
+          <div className="bg-[#A2CBF0] rounded p-5 py-8">
+            <h1 className="text-[#000C7B]">What is Duis aute irure ?</h1>
+            <span className="text-black">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+              quae.
+            </span>
+            <p className="flex justify-end items-end pt-3 text-[#000C7B]">
+              Read more
+            </p>
+          </div>
+          <div className="bg-[#A2CBF0] rounded p-5 py-8">
+            <h1 className="text-[#000C7B]">What is Duis aute irure ?</h1>
+            <span className="text-black">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+              quae.
+            </span>
+            <p className="flex justify-end items-end pt-3 text-[#000C7B]">
+              Read more
+            </p>
+          </div>
+          <div className="bg-[#A2CBF0] rounded p-5 py-8">
+            <h1 className="text-[#000C7B]">What is Duis aute irure ?</h1>
+            <span className="text-black">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+              quae.
+            </span>
+            <p className="flex justify-end items-end pt-3 text-[#000C7B]">
+              Read more
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="text-white flex justify-center items-center gap-6 mt-5">
+        <p>Are you excited on the project ?</p>
+        <button
+          type="button"
+          className="bg-gradient-to-r  from-[#4158D0] to-[#C850C0] px-7 py-4 rounded-full"
+        >
+          Fund the project
+        </button>
       </div>
     </div>
   );
