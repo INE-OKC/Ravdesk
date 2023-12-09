@@ -4,7 +4,7 @@ import play from "../public/play.png";
 const Main = () => {
   return (
     <div className="p-5 ">
-      <div className="firstsection w-[100%] grid grid-cols-2 justify-items-center place-items-start gap-3 mb-5">
+      <div className="firstsection w-[100%] grid grid-cols-1 justify-items-center place-items-center gap-3 mb-5 md:grid-cols-2">
         <div className="bg-[#D7D2DB] w-[100%] flex justify-center items-center p-16">
           <Image src={play} alt="" width={80} height={80} />
         </div>
@@ -20,7 +20,7 @@ const Main = () => {
       <div className="flex justify-start items-center bg-[#246CFA] w-[80%] mr-auto p-5 rounded-full">
         <p className="text-white">Live Link of the Project</p>
       </div>
-      <div className="text-white flex justify-start items-center gap-20 mt-10">
+      <div className="text-white flex justify-start items-center gap-5 mt-10 md:gap-20">
         <div className="flex justify-center items-center gap-3 bg-[#D4FC79] text-black px-10 py-4 font-bold text-l rounded-full">
           <p>100$</p>
           <p>|</p>
@@ -34,11 +34,11 @@ const Main = () => {
         minus omnis debitis vero, porro suscipit iste fugit error?
       </p>
       <div>
-        <p className="bg-[#246CFA] p-5 text-white w-[15%] mr-auto flex justify-center rounded-full items-center">
+        <p className="bg-[#246CFA] p-5 text-white w-[40%] mr-auto flex justify-center rounded-full items-center lg:w-[15%]">
           FAQS
         </p>
 
-        <div className="text-white grid grid-cols-2 justify-items-center gap-4 mt-5">
+        <div className="text-white grid grid-cols-1 justify-items-center gap-4 mt-5 md:grid-cols-2">
           <div className="bg-[#A2CBF0] rounded p-5 py-8">
             <h1 className="text-[#000C7B]">What is Duis aute irure ?</h1>
             <span className="text-black">
@@ -81,7 +81,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className="text-white flex justify-center items-center gap-6 mt-5">
+      <div className="text-white flex flex-col justify-center items-center gap-4 mt-5 lg:flex-row lg:gap-5 lg:mt-5">
         <p>Are you excited on the project ?</p>
         <button
           type="button"
