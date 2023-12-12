@@ -1,9 +1,29 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "../../public/Logo.png";
 import Google from "../../public/google.png";
 import lock from "../../public/add.png";
+import { useSession, signIn, signOut } from "next-auth/react";
+import { useRouter } from "next/navigation";
 const page = () => {
+  // use session hook
+  const router = useRouter();
+  type Session = {
+    // Define the structure of your session object here
+    email?: string;
+    image?: string;
+    name?: string;
+  };
+  const [sessions, setSessions] = useState<Session | null>(null);
+  const { data: session } = useSession();
+
+  const handleSession = async () => {
+    await signIn();
+    if (session) {
+      router.push("/dashboard");
+    }
+  };
   return (
     <div className="w-full h-screen bg-[#0C0414] flex justify-center flex-col items-center ">
       <div className="login p-5 from-[#4158D0] to-[#C850C0] rounded">
@@ -44,7 +64,11 @@ const page = () => {
           </div>
           <div className="group2 flex flex-col justify-center items-center gap-10">
             <div>
-              <button className="flex justify-center items-center text-white gap-2 gogleLogs text-sm p-2 rounded">
+              <button
+                type="button"
+                className="flex justify-center cursor-pointer items-center text-white gap-2 gogleLogs text-sm p-2 rounded"
+                onClick={handleSession}
+              >
                 <Image src={Google} alt="" width={30} />
                 Sign in with Google
               </button>
@@ -53,6 +77,9 @@ const page = () => {
               <button
                 type="button"
                 className="flex justify-center items-center text-white gap-2 gogleLogs text-sm p-2 rounded"
+                onClick={() => {
+                  console.log("Sign in with Google");
+                }}
               >
                 <Image src={lock} alt="" width={30} />
                 Create a new Account
