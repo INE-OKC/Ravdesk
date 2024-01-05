@@ -13,13 +13,13 @@
 <body>
     <div class="fof">
         <header>
-            <a href="../index.html">
-                <div class="container">
-                    <div class="img">
+            <div class="container">
+                <div class="img">
+                    <a href="../index.html">
                         <img src="../public/Logo.png" alt="Logo">
-                    </div>
+                    </a>
                 </div>
-            </a>
+            </div>
         </header>
         <section>
             <div class="container">
@@ -42,7 +42,7 @@
                             <div class="img"><img src="../public/google.png" alt="Google logo"></div>
                             <span>Sign in with Google</span>
                         </button>
-                        <button class="btn d-flex">
+                        <button class="btn d-flex" id="register">
                             <div class="img"><img src="../public/add.png" alt="Google logo"></div>
                             <span>New Registration</span>
                         </button>
@@ -56,4 +56,10 @@
         <h2>Mobile View Coming Soon</h2>
     </div>
 </body>
+<script>
+    var register = document.getElementById("register");
+    register.addEventListener('click', () => {
+        location.href = "../register/reg.html";
+    })
+</script>
 </html>
