@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    background-color: #0C0413;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    padding: 1rem 1.5rem;
+}
+
+.d_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.img{
+    width: 15%;
+}
+
+.up{
+    flex-direction: column;
+}
+
+.up h2{
+    margin-bottom: 50px;
+}
+
+.up p{
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.up h2 span{
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(180deg, rgba(233,146,150,1) 0%, rgba(192,83,187,1) 50%, rgba(118,126,223,1) 100%);
+    font-size: 2rem;
+}
+
+.box{
+    width: 40%;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.forrm{
+    flex-direction: column;
+}
+
+.forrm *{
+    width: 100%;
+}
+
+.forrm input{
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    background-color: #5A585D;
+}
+
+.forrm button{
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 40px;
+    font-size: 1.3rem;
+    background: rgb(80,90,200);
+    background: linear-gradient(90deg, rgba(80,90,200,1) 0%, rgba(192,83,187,1) 50%, rgba(233,146,150,1) 100%);
+    cursor: pointer;
+}
+
+.boxx{
+    font-size: 3rem;
+}
+
+.box .btn{
+    width: 70%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #924292;
+    cursor: pointer;
+    /* border-image: linear-gradient(90deg, rgba(80,90,200,1) 0%, rgba(192,83,187,1) 50%, rgba(233,146,150,1) 100%); */
+}
+
+.btn span{
+    font-size: 1.3rem;
+}
+
+.resp{
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .resp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .fof{
+        display: none;
+    }
+}
