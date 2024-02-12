@@ -41,3 +41,9 @@ Efficient Funding Processes: Ravdesk's streamlined funding processes, coupled wi
 #### Conclusion
 
 Ravdesk redefines equity crowdfunding on the blockchain, providing investors with a transparent, secure, and efficient platform to support startups using cryptocurrency. With innovative features like Token Gated Communities, gasless interactions, and an enhanced refund policy, Ravdesk stands at the forefront of reshaping how projects are funded and governed. Join Ravdesk today to be part of the future of decentralized and investor-centric crowdfunding.
+
+
+
+
+
+See also the list of [contributors](https://github.com/INE-OKC/Ravdesk/contributors) who participated in this project.
