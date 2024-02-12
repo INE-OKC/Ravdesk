@@ -1,3 +1,4 @@
+# Ravdesk
 ## Introduction
 
 Ravdesk stands as a pioneering equity crowdfunding app on the blockchain, providing a seamless avenue for investors to support startups using cryptocurrency. With a commitment to transparency, the platform introduces Token Gated Communities, fostering decentralized voting and gasless interactions. This empowers founders, investors, and smart contracts to collaboratively steer project direction and gain funding approvals. Ravdesk further enhances investor protection with an improved refund policy.
@@ -15,6 +16,7 @@ Project Direction and Funding Approvals: Founders and investors can collectively
 Investor Protection: Ravdesk prioritizes investor protection by implementing an enhanced refund policy, providing additional security and confidence to those supporting startups on the platform.
 
 ### How It Works
+![2335a3f1-d339-4732-b7bc-2f5a36fb0410](https://github.com/INE-OKC/Ravdesk/assets/75612396/c387794f-4ea4-44e9-910c-7e1232e99c8b)
 
 Equity Crowdfunding: Investors can seamlessly support startups by contributing cryptocurrency through the Ravdesk platform, leveraging the benefits of blockchain technology.
 
